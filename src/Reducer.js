@@ -261,6 +261,7 @@ function inject(state, action, props, scenes) {
         ...state,
         index: 0,
         from: null,
+        time: Date.now(), // this will allow to successive reset to work..woo
         children: state.children,
       };
     default:
